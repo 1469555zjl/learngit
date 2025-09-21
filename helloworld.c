@@ -1,9 +1,21 @@
-#include <cs50.h>
-
 #include <stdio.h>
 
-int main()
+int main(void)
 {
-    printf("hello, jiawei\n");
+    long x = get_long("what's x? ");
+    long y = get_long("what's y? ");
+
+    if (x > y)
+    {
+        printf("%li\n", x + y);
+    }
+    else if (x < y)
+    {
+        printf("%li\n", x - y);
+    }
+    else if (x==y)
+    {
+        printf("%li\n", x * y);
+    }
     return 0;
-}                                                              
+}
